@@ -29,7 +29,7 @@ export const AddTaskForm = ({ fetchTasks }) => {
             </Typography>
         <div className="addTaskForm">
         <TextField size="small" label="Task" variant="outlined" value={newTask} onChange={(e) => setNewTask(e.target.value)}/>
-        <Button disabled={!newTask.length} variant="outlined" onClick={AddTaskForm}>
+        <Button disabled={!newTask.length} variant="outlined" onClick={addNewTask}>
             <AddIcon />
         </Button>
         </div>
