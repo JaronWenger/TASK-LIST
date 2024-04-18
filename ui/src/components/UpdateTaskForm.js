@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import axios from "axios"
 import { API_URL } from '../utils';
 
-export const UpdateTaskForm = ({ fetchTasks, sDialogOpen, setIsDialogOpen, task }) => {
+export const UpdateTaskForm = ({ fetchTasks, isDialogOpen, setIsDialogOpen, task }) => {
     const {id, completed} = task;
     const {taskName, setTaskName} = useState("");
 
