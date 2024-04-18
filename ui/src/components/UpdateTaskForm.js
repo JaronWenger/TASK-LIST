@@ -6,7 +6,7 @@ import { API_URL } from '../utils';
 
 export const UpdateTaskForm = ({ fetchTasks, isDialogOpen, setIsDialogOpen, task }) => {
     const {id, completed} = task;
-    const {taskName, setTaskName} = useState("");
+    const [taskName, setTaskName] = useState("");
 
     const handleUpdateTaskName = async () => {
       try {
