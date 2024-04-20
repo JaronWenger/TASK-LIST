@@ -12,9 +12,13 @@ if (process.env.DEVELOPMENT) {
   app.use(cors());
 }
 
+
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+
+
 
 app.get("/task", async (req, res) => {
   try {
@@ -25,6 +29,8 @@ app.get("/task", async (req, res) => {
     res.status(400).send(`Error fetching tasks: ${err}`);
   }
 });
+
+
 
 app.post("/task", async (req, res) => {
   try {
@@ -38,6 +44,8 @@ app.post("/task", async (req, res) => {
   }
 });
 
+
+
 app.put("/task", async (req, res) => {
   try {
     const task = req.body;
@@ -50,6 +58,8 @@ app.put("/task", async (req, res) => {
   }
 });
 
+
+
 app.delete("/task/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -61,6 +71,8 @@ app.delete("/task/:id", async (req, res) => {
     res.status(400).send(`Error deleting tasks: ${err}`);
   }
 });
+
+
 
 if (process.env.DEVELOPMENT) {
   app.listen(port, () => {

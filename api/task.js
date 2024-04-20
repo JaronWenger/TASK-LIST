@@ -11,6 +11,9 @@ import crypto from "crypto";
 const client = new DynamoDBClient({ region: "us-east-1" });
 const docClient = DynamoDBDocumentClient.from(client);
 
+
+
+
 export const fetchTasks = async () => {
   const command = new ScanCommand({
     ExpressionAttributeNames: { "#name": "name" },
@@ -22,6 +25,9 @@ export const fetchTasks = async () => {
 
   return response;
 };
+
+
+
 
 export const createTasks = async ({ name, completed }) => {
   const uuid = crypto.randomUUID();
@@ -38,6 +44,10 @@ export const createTasks = async ({ name, completed }) => {
 
   return response;
 };
+
+
+
+
 
 export const updateTasks = async ({ id, name, completed }) => {
   const command = new UpdateCommand({
@@ -60,6 +70,10 @@ export const updateTasks = async ({ id, name, completed }) => {
 
   return response;
 };
+
+
+
+
 
 export const deleteTasks = async (id) => {
   const command = new DeleteCommand({
