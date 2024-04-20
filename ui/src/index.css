@@ -36,3 +36,9 @@ body {
   .done {
     text-decoration: line-through;
   }
+
+  @import '@fontsource/anton';
+
+.heading {
+  font-family: 'Anton', sans-serif;
+}

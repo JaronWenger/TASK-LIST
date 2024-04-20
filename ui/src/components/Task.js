@@ -46,10 +46,10 @@ export const Task = ({ task, fetchTasks }) => {
         </div>
 
         <div className="taskButtons">
-        <Button variant="contained" onClick={() => setIsDialogOpen(true)}>
-            <EditIcon/>
+        <Button variant="contained" onClick={() => setIsDialogOpen(true)} sx={{ backgroundColor: 'white', color: 'black' }}>
+            <EditIcon />
         </Button>
-        <Button color="error" variant="contained" onClick={handleDeleteTask}>
+        <Button color="error" variant="contained" onClick={handleDeleteTask} sx={{ backgroundColor: 'darkgrey', color: 'black' }}>
             <DeleteIcon/>
         </Button>
         </div>

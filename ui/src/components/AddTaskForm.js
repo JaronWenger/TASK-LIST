@@ -5,6 +5,8 @@ import AddIcon from '@mui/icons-material/Add';
 import axios from "axios";
 import { API_URL } from '../utils';
 
+import '@fontsource/anton';
+
 export const AddTaskForm = ({ fetchTasks }) => {
     const [newTask, setNewTask] = useState("")
 
@@ -24,8 +26,8 @@ export const AddTaskForm = ({ fetchTasks }) => {
     }
   return (
     <div>
-        <Typography align="center" variant="h2" paddingTop={2} paddingBottom={2}>
-            Task List
+        <Typography marginTop="200px" align="center" variant="h2" paddingTop={2} paddingBottom={2} style={{ fontSize: "7rem", fontFamily: 'Anton, sans-serif' }}>
+            TASK LIST
             </Typography>
         <div className="addTaskForm">
         <TextField size="small" label="Task" variant="outlined" value={newTask} onChange={(e) => setNewTask(e.target.value)}/>
