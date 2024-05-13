@@ -16,6 +16,11 @@ const darkTheme = createTheme({
 });
 
 export default function App() {
+  useEffect(() => {
+    document.title = "Task List"; // Set the static title for the web page
+  }, []); 
+
+
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true); // Introduce loading state
 
