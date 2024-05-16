@@ -1,6 +1,6 @@
 # TASK-LIST
 
-Every portfolio needs a to-do list. This web app is a Task List that impliments CRUD (create, read, update, and delete). Using AWS services, this app was coded in React and Node.js and hosted on AWS amplify.  This is a simple full stack project.
+Every portfolio needs a to-do list. This web app is a Task List that implements CRUD (create, read, update, and delete). Using AWS services, this app was coded in React and Node.js and hosted on AWS amplify.  This is a simple full stack project.
 
 Below is the link to this project.
 
